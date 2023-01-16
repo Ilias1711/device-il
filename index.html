@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!--Header start-->
     <header class="page_header">
         
         <nav class="navigation">
-            <img src="./img/svg/logo.svg" alt="device" class="logo">
+            <a href="#!"><img src="./img/svg/logo.svg" alt="device" class="logo"></a>
             <ul class="navigation_user">
                 <li class="seach">
-                    <img src="./img/svg/search.svg" alt="search">
-                    <input type="text">
-                    <button>Найти</button>
+                    <!--Отправка формы-->
+                    <form action="#!" method="get">
+                        <img src="./img/svg/search.svg" alt="search">
+                        <label for="search">
+                            <input type="text" id="search">
+                            <input type="submit" id="search">
+                        </label>
+                    </form>
+                    <!--Конец отправки формы-->
                 </li>
                 <li class="input">
                     <img src="./img/svg/human.svg" alt="human">
@@ -48,6 +55,9 @@
                 
         </nav>
     </header>
+    <!--Header end-->
+
+    <!--main content start-->
     <main class="main_index">
         <div class="product">
             <img src="./img/svg/arrow.svg" alt="arrow">
@@ -59,14 +69,156 @@
             <p class="description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
             <div class="specifications">
-                <a href="#!" class="more">Подробнее</a>
-                <h4>800м</h4>
-                <p>Дальность полета</p>
-                <h4>50m</h4>
-                <p>Радиус поражения</p>
+                <a href="#!" class="specifications">Подробнее</a>
+                <h4 class="specifications">800м</h4>
+                <p class="specifications">Дальность полета</p>
+                <h4 class="specifications">50m</h4>
+                <p class="specifications">Радиус поражения</p>
+            </div>
+            <div class="mark">
+                <img src="./img/svg/elipse.svg" alt="mark">
+                <img src="./img/svg/Ellipse-.svg" alt="mark">
+                <img src="./img/svg/Ellipse-.svg" alt="mark">
             </div>
         </div>
+        <section class="gadget_catalog">
+            <ul>
+                <li class="vr">
+                    <img src="./img/svg/catalor_images/vr.svg" alt="VR">
+                    <a href="#!">Виртуальная реальность</a>
+                    <p>Виртуальная реальность</p>
+                </li>
+                <li class="sel">
+                    <img src="img/svg/catalor_images/sel.svg" alt="selfie">
+                    <a href="#!"></a>
+                    <p>Моноподы для селфи</p>
+                </li>
+                <li class="action">
+                    <img src="./img/svg/catalor_images/action.svg" alt="action_cam">
+                    <a href="#!">Экшн-камеры</a>
+                    <p>Экшн-камеры</p>
+                </li>
+                <li class="fitness">
+                    <img src="./img/svg/catalor_images/fitnes.svg" alt="fitness">
+                    <a href="#!">Фитнес-браслеты</a>
+                    <p>Фитнес-браслеты</p>
+                </li>
+                <li class="smart_watch">
+                    <img src="./img/svg/catalor_images/smart.svg" alt="smart_watch">
+                    <a href="#!">Умные часы</a>
+                    <p>Умные часы</p>
+                </li>
+                <li>
+                    <img src="./img/svg/catalor_images/quatro.svg" alt="quadrocopter">
+                    <a href="#!">Квадрокоптеры</a>
+                    <p>Квадрокоптеры</p>
+                </li>
+            </ul>
+        </section>
+        <!--main content end-->
+
+        <!--delivery start-->
+        <section class="delivery">
+            <div class="delivery_list">
+                <p>Доставка</p>
+                <p>Гарантия</p>
+                <p>Кредит</p>
+            </div>
+            <div class="delivery_info">
+                <h4>Доставка</h4>
+                <p>Мы с удовольствием доставим ваш товар прямо
+                    к вашему подъезду совершенно бесплатно! Ведь
+                    мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
+            </div>
+            <div class="delivery_img">
+                <img src="./img/svg/delivery_human.svg" alt="delivery">
+            </div>
+            <div class="delivery_order">
+                <img src="./img/svg/bus.svg" alt="delivery">
+                <p>Доставим редкий товар под заказ</p>
+            </div>
+        </section>
+        <!--delyvery end-->
+
+        <!--feedback start-->
+        <section class="feedback">
+            <div class="about_us">
+                <h4>
+                    О нас
+                </h4>
+                <p>
+                    Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+                </p>
+                <p>
+                    Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
+                </p>
+                <ol class="">
+                    <li>
+                        Меловые линии
+                    </li>
+                    <li>
+                        СДИК
+                    </li>
+                    <li>
+                        ТоксБерри
+                    </li>
+                </ol>
+                <a href="#!">Подробнее о нас</a>
+            </div>
+            <div class="contacts">
+                <h4>
+                    Контакты
+                </h4>
+                <p>
+                    Вы можете забрать товар сами, заехав в наш офис. 
+                    Заодно сможете проверить работоспособность покупки. 
+                </p>
+                <p>
+                    Интернет-магазин «Девайс»
+                </p>
+                <p>
+                    Санкт-Петербург, набережная реки Карповки, 5, литера П.<br>+7 (812) 812-12-12
+                </p>
+                <p>
+                    Время работы
+                </p>
+                <p>
+                    пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00
+                </p>
+                <a href="#!">Напишите нам</a>
+            </div>
+
+        </section>
+        <div class="mail">
+            <div class="mail_info">
+                <h3>
+                    Подпишитесь на рассылку
+                </h3>
+                <p>
+                    Еженедельный дайджест с обзорами новинок,
+                    длительными тест-драйвами, распаковками, а 
+                    также акции, спецпредложения и вот это вот всё.
+                </p>
+            </div>
+            <form action="#!" method="get">
+                <label for="get_mail">
+                    Ваш e-mail
+                    <input type="text" name="mail" id="get_mail">
+                </label>
+                <input type="submit">
+            </form>
+            <div class="free">
+                <img src="./img/svg/free.svg" alt="free">
+                <p>Это бесплатно</p>
+            </div>
+        </div>
+        <!--feedback end-->
+        
     </main>
+    <footer>
+        
+    </footer>
     
 </body>
 </html>

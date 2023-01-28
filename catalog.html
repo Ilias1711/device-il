@@ -104,46 +104,26 @@
         </header>
     <section class="catalog_product">
         <!--Отправка формы фильтра товара-->
-        <!--...................................................Проверяющему просьба обратьть внимание на разметку ниже........................-->
-        <form action="#!" method="get">
-            <!--Фрагмент разметки с полем отправки желаемой цены -->
-            
-            
-              <p>ЦВЕТ:</p>
-                <p><input type="checkbox" name="a" value="black">Черный</p>
-                <p><input type="checkbox" name="a" value="white">Белый</p>
-                <p><input type="checkbox" name="a" value="blue">Синий</p>
-                <p><input type="checkbox" name="a" value="red">Красный</p>
-                <p><input type="checkbox" name="a" value="pink">Розовый</p>
-                <label for="bluetooth_yes">
-                    Есть
-                    <input type="radio" name="availability_bluetooth" value="Yes" id="bluetooth_yes">
-                </label>
-                <label for="bluetooth_no">
-                    Нет
-                    <input type="radio" name="availability_bluetooth" value="No" id="bluetooth_no">
-                </label>
-            
-                
-                <button class="catalog_form">
-                    Показать
-                </button>
-            
+        <form class="catalog_product_filter" action="#!" method="get">
+            <p>ЦВЕТ:</p>
+            <p><input type="checkbox" name="a" value="black">Черный</p>
+            <p><input type="checkbox" name="a" value="white">Белый</p>
+            <p><input type="checkbox" name="a" value="blue">Синий</p>
+            <p><input type="checkbox" name="a" value="red">Красный</p>
+            <p><input type="checkbox" name="a" value="pink">Розовый</p>
+            <label for="bluetooth_yes">
+                Есть
+                <input type="radio" name="availability_bluetooth" value="Yes" id="bluetooth_yes">
+            </label>
+            <label for="bluetooth_no">
+                Нет
+                <input type="radio" name="availability_bluetooth" value="No" id="bluetooth_no">
+            </label>
+            <button class="catalog_form">
+                Показать
+            </button>
         </form>
-    
-        <!--Конец отправки формы-->
-        <section>
-            <h4>Сортировка:</h4>
-        <!--Отправка формы из раздела "Популярное"-->
-            <form action="#!" method="get">
-                <label for="popular">
-                    <select name="popular_device" id="popular_choise">
-                        <!--<option>-->
-
-                    </select>
-                </label>
-            </form>
-            <!--выбранные товары-->
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <a href="#!">
                 <img src="./img/svg2/up_arrow.svg" alt="arrow">
             </a>
@@ -241,7 +221,6 @@
                             <img src="./img/svg/Frame.svg" alt="htmlAcademy">
                         </a>
             </footer>
-        </section>
     </main>
 </body>
 </html>

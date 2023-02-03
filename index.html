@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>device</title>
-    
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <!--Header start-->
     <header class="page_header">
         
         <nav class="navigation">
-            <a href="index.html" class="navigation_logo"><img src="./img/svg/logo.svg" alt="Логотип магазина DEVICE" class="page_header_logo"></a>
+            <a href="index.html" class="navigation_logo">
+                <img src="./img/svg/logo.svg" width="145" height="36" alt="Логотип магазина DEVICE" class="page_header_logo">
+            </a>
             <ul class="navigation_user">
                 <li class="seach">
                     <!--Отправка формы-->
@@ -27,20 +29,22 @@
                 </li>
                 <li class="input">
                     <img src="./img/svg/human.svg" alt="human">
-                    <a href="#!">Войти</a>
+                    <a class="input_link" href="#!">Войти</a>
                 </li>
                 <li class="compare">
                     <img src="./img/svg/compare.svg" alt="compare">
-                    <a href="#!">Сравнить</a>
+                    <a class="input_link" href="#!">Сравнить</a>
                 </li>
                 <li class="bag">
                     <img src="./img/svg/bag.svg" alt="bag">
-                    <a href="#!">Корзина</a>
+                    <a class="input_link" href="#!">Корзина</a>
                 </li>
             </ul>
             <div class="navigation_catalog_list">  
-                <a href="#!">Каталог товаров
-                    <img src="./img/svg/catalog.svg" alt="catalog">
+                <a class="navigation_catalog_list_link" href="#!">Каталог товаров
+                    <span class="elips">
+
+                    </span>
                 </a>
                 <!--Разметка всплывающего списка категорий товаров-->
                 <div class="navigation_wrap">
@@ -90,14 +94,14 @@
             <h1 class="visually_hidden">Магазин "DEVICE"</h1>
 
             <div class="main_product_interactive">
-                <button class="main_product_interactive_button">
-                    <img class="main_product_interactive_img" src="./img/svg/arrow.svg" alt="arrow">
+                <button class="slider_button slider_next" type="button">
+                    <span class="visually_hidden">Предыдущее фото</span>
                 </button>
                 <a class="main_product_interactive_link" href="#!">
-                    <img class="main_product_interactive_img" src="./img/png/slider-1.png" alt="Квадрокоптер">
+                    <img class="main_product_interactive_img" width="560" height="560" src="./img/png/slider-1.png" alt="Квадрокоптер">
                 </a>
-                <button class="main_product_interactive_button">
-                    <img class="main_product_interactive_img" src="./img/svg/arrow.svg" alt="arrow">
+                <button class="slider_button slider_prev" type="button">
+                    <span class="visually_hidden">Следующее фото</span>
                 </button>
             </div>
             <div class="main_advantages">
@@ -108,9 +112,9 @@
                 <div class="main_advantages_specification">
                     
                     <h4 class="specifications">800м</h4>
-                    <p class="specifications">Дальность полета</p>
+                    <p class="specifications_description">Дальность полета</p>
                     <h4 class="specifications">50m</h4>
-                    <p class="specifications">Радиус поражения</p>
+                    <p class="specifications_description">Радиус поражения</p>
                 </div>
             </div>
             <div class="main_index_mark">
@@ -133,7 +137,7 @@
                     </li>
                     <li class="manin_type_item">
                         <img class="main_type_img" src="./img/svg/catalor_images/action.svg" alt="Экшн-камеры">
-                        <a class="main_type_img" href="#!">Экшн-камеры</a>
+                        <a class="main_type_link" href="#!">Экшн-камеры</a>
                         <p class="main_type_description">Экшн-камеры</p>
                     </li>
                     <li class="main_type_item">
@@ -193,10 +197,10 @@
                 <div id="content-3">
                     Кредит под 247% вы можете оформить прямо в нашем магазине.
                 </div>
-                <div class="main_service_tabs_link">
-                    <a href="#content-1">Доставка</a>
-                    <a href="#content-2">Гарантия</a>
-                    <a href="#content-3">Кредит</a>
+                <div class="main_service_tabs_links">
+                    <a class="main_service_tabs_links" href="#content-1">Доставка</a>
+                    <a class="main_service_tabs_links" href="#content-2">Гарантия</a>
+                    <a class="main_service_tabs_links" href="#content-3">Кредит</a>
                 </div>
             </div>
             
@@ -226,7 +230,8 @@
                 <p class="fedback_about_us_description">
                     Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:
                 </p>
-                <ol class="fedback_about_us_list">
+                <!--Может лучше сылки?-->
+                <ul class="fedback_about_us_list">
                     <li class="fedback_about_us_item">
                         Меловые линии
                     </li>
@@ -295,9 +300,9 @@
     <footer class="page_footer">
         <section class="footer_address">
             <a href="#!">
-                <img src="./img/svg/footer_label.svg" alt="device">
+                <img src="./img/svg/footer_label.svg" width="145" height="36" alt="device">
             </a>
-            <p>
+            <p class="footer_address_description">
                 Санкт-Петербург, набережная
                 реки Карповки, 5, литера П.
             </p>

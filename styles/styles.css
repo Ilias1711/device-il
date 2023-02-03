@@ -1,0 +1,182 @@
+/*Подключение шрифтов*/
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Rubik/Rubik-Black.woff) format(woff);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url(../fonts/Raleway/Raleway-Black.woff) format(woff);
+    font-display: swap;
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/Rubik/Rubik-Black.woff) format(woff);
+    font-display: swap;
+/*Конец подключения шрифтов*/
+
+}
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    color: #444444;
+    background-color: #ffffff;
+}
+/*Стилизация Header*/
+.navigation_user {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px; 
+}
+.page_header {
+    color: #000000;
+    background-color: #FFE17F;
+}
+/*Базовая Стилизация ссылок в Header*/
+.navigation_service_link, .navigation_catalog_list_link {
+    font-family: "Rubik";
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+}
+/*Базовая стилизация всплывающих списков товаров*/
+.navigation_link {
+    font-family: "Rubik";
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+/*Базовая стилизация заголовков*/
+.main_advantages_title, .feedback_about_us_title, .feedback_contacts_title, .mail_title {
+    font-family: "Raleway";
+    font-style: normal;
+    color: #000000;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 30px;
+}
+/*Базовая стилизация ссылок с желтой полосой*/
+.main_advantages_more, .main_service_tabs_links, .fedback_about_us_link, .feedback_contacts_link, .catalog_form {
+    font-family: "Rubik";
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+/*Базовая стилизация зарактериятик продукта*/
+.specifications {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 30px;
+    color: #000000;
+}
+/*Базовая стилизация разделов продукта*/
+.main_type_link {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+}
+
+.main_service_delivery_order_link {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color:#000000;  
+}
+.fedback_about_us_item {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #000000;
+}
+.feedback_contacts_subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+/*Базовая стилизация футера*/
+footer {
+    color: #FFFFFF;
+    background-color: #444444;
+}
+.footer_address_description {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+.footer_social_link_service {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: inherit;
+}
+/*Разметка каталога*/
+.inner_header_title {
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+/*Хлебные крошки*/
+.breadcrumbs {
+    color: #444444;
+}
+.breadcrumbs_link {
+    color: inherit;
+
+}
+.catalog_product_filter_bluetooth, .catalog_product_filter_color, .product_card_title {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pagination {
+    background-color: #ffffff;
+}
+.pagination_link {
+    color: #444444;
+    background-color: #EBEBEB;
+    text-decoration: none;
+    line-height: 20px;
+    font-weight: 400;
+  }

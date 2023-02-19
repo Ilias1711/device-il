@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-    <!--Header start-->
-    <header class="page_header">
-        
-        <nav class="navigation">
-            <a href="index.html" class="navigation_logo"><img src="./img/svg/logo.svg" alt="Логотип магазина DEVICE" class="page_header_logo"></a>
-            <ul class="navigation_user">
+   <!--Header start-->
+   <header class="page_header">
+    <nav class="navigation">
+        <a href="index.html" class="navigation_logo">
+            <img src="./img/svg/logo.svg" width="145" height="36" alt="Логотип магазина DEVICE" class="page_header_logo">
+        </a>
+        <ul class="navigation_user">
+            <div class="navigation_container_1">
                 <li class="seach">
                     <!--Отправка формы-->
                     <form class="navigation_get_form" action="#!" method="get">
@@ -21,70 +23,79 @@
                         <label for="search">
                             <input type="text" id="search">
                         </label>
-                        
+                 
                     </form>
-                    <!--Конец отправки формы-->
+                <!--Конец отправки формы-->
                 </li>
+            </div>
+            <div class="navigation_container_2"> 
                 <li class="input">
                     <img src="./img/svg/human.svg" alt="human">
-                    <a href="#!">Войти</a>
+                    <a class="input_link" href="#!">Войти</a>
                 </li>
-                <li class="compare">
-                    <img src="./img/svg/compare.svg" alt="compare">
-                    <a href="#!">Сравнить</a>
-                </li>
-                <li class="bag">
-                    <img src="./img/svg/bag.svg" alt="bag">
-                    <a href="#!">Корзина</a>
-                </li>
-            </ul>
-            <div class="navigation_catalog_list">  
-                <a href="#!">Каталог товаров
-                    <img src="./img/svg/catalog.svg" alt="catalog">
-                </a>
-                <!--Разметка всплывающего списка категорий товаров-->
-                <div class="return">
-                    <ul class="navigation_list">
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Виртуальная реальность</a>
-                        </li>
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Моноподы для селфи</a>
-                        </li>
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Экшн-камеры</a>
-                        </li>
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Фитнес-браслеты</a>
-                        </li>
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Умные часы</a>
-                        </li>
-                        <li class="navigation_item">
-                            <a class="navigation_link" href="#!">Квадрокоптеры</a>
-                        </li>
-                    </ul>
+                <div class="navigation_container_2_1">
+                    <li class="compare">
+                        <img src="./img/svg/compare.svg" alt="compare">
+                        <a class="input_link" href="#!">Сравнить</a>
+                    </li>
+                    <li class="bag">
+                        <img src="./img/svg/bag.svg" alt="bag">
+                        <a class="input_link" href="#!">Корзина</a>
+                    </li>
                 </div>
-                <!--Конец разметки всплывающего списка категорий товаров-->
-            </div>
-            <div class="navigation_service">
-                <ul class="navigation_service_list">
-                    <li class="navigation_service_item">
-                        <a href="#!" class="navigation_service_link">Доставка</a>
+            </div> 
+        </ul>
+        <div class="navigation_container_3">  
+            <a class="navigation_catalog_list_link" href="#!">Каталог товаров
+                <span class="elips">
+
+                </span>
+            </a>
+            <!--Разметка всплывающего списка категорий товаров-->
+            <div class="navigation_wrap">
+                <ul class="navigation_list">
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Виртуальная реальность</a>
                     </li>
-                    <li class="navigation_service_item">
-                        <a href="#!" class="navigation_service_link">Гарантия</a>
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Моноподы для селфи</a>
                     </li>
-                    <li class="navigation_service_item">
-                        <a href="#!" class="navigation_service_link">Контакты</a>
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Экшн-камеры</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Фитнес-браслеты</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Умные часы</a>
+                    </li>
+                    <li class="navigation_item">
+                        <a class="navigation_link" href="#!">Квадрокоптеры</a>
                     </li>
                 </ul>
-            </div>    
-        </nav>
-    </header>
-    <!--Header end-->
+            </div>
+            
+            <!--Конец разметки всплывающего списка категорий товаров-->
+        </div>
+        <div class="navigation_service">
+            <ul class="navigation_service_list">
+                <li class="navigation_service_item">
+                    <a href="#!" class="navigation_service_link">Доставка</a>
+                </li>
+                <li class="navigation_service_item">
+                    <a href="#!" class="navigation_service_link">Гарантия</a>
+                </li>
+                <li class="navigation_service_item">
+                    <a href="#!" class="navigation_service_link">Контакты</a>
+                </li>
+            </ul>
+        </div>    
+    </nav>
+</header>
+<!--Header end-->
     <!--main start-->
-    <main class="main_inner">
+    <main class="main_inner main_container">
+        <div class="page_container"></div>
         <header class="inner_header">
             <h1 class="inner_header_title">
                 Моноподы для селфи
@@ -129,6 +140,7 @@
             </button>
         </form>
         <!--Конец формы-->
+        <div class="catalog_right_column">
         <select class="select_control" aria-label="Сортировка">
             <option value="popular">Популярное</option>
             <option value="cheap">Низкая цена</option>
@@ -196,54 +208,64 @@
               </a>
             </li>
           </ul>
+        </div>
+    </section>
+    </div>
+    </main>
         <!--Pagination end-->
-    
-            <!--Footer start-->
-            <footer class="page_footer">
-                <section class="footer_address">
-                    <a href="#!">
-                        <img src="./img/svg/footer_label.svg" alt="device">
+            <!--footer start-->
+    <footer class="page_footer">
+        <div class="page_footer_container">
+            <section class="footer_address">
+                <a href="#!">
+                    <img src="./img/svg/footer_label.svg" width="145" height="36" alt="device">
+                </a>
+                <p class="footer_address_description">
+                    Санкт-Петербург, набережная
+                    реки Карповки, 5, литера П.
+                </p>
+            </section>
+            <section class="footer_social">
+                <h2 class="visually_hidden">Мы в социальных сетях</h2>
+                <ul class="footer_social_list_service">
+                    <li class="footer_social_item_service">
+                        <a class="footer_social_link_service" href="#!">Доставка</a>
+                    </li>
+                    <li class="footer_social_item_service">
+                        <a class="footer_social_link_service" href="#!">Горантии</a>
+                    </li>
+                    <li class="footer_social_item_service">
+                        <a class="footer_social_link_service" href="#!">Контакты</a>
+                    </li>
+                </ul>
+            
+                <ul class="footer_social_list_social">
+                    <li class="footer_social_list_social">
+                        <a class="footer_social_link_social" href="#!">
+                            <img class="footer_social_logo" src="./img/svg/telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                        <a class="footer_social_link_social" href="#!">
+                            <img class="footer_social_logo" src="./img/svg/youtube.svg" alt="youtube">
+                        </a>
+                    <li class="footer_social_list_social">
+                        <a class="footer_social_link_social" href="#!">
+                            <img class="footer_social_logo" src="./img/svg/tveet.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+                <section class="footer_phone">
+                    <a class="feedback_contacts_address_phone">
+                        +7 (812) 812-12-12
                     </a>
-                    <p>
-                        Санкт-Петербург, набережная
-                        реки Карповки, 5, литера П.
-                    </p>
+                    <a class="footer_phone_htmlAcademy" href="#!">
+                        <img src="./img/svg/Frame.svg" alt="htmlAcademy">
+                    </a>
                 </section>
-                <section class="footer_social">
-                    <ul class="footer_social_list_service">
-                        <li class="footer_social_item_service">
-                            <a class="footer_social_link_service" href="#!">Доставка</a>
-                        </li>
-                        <li class="footer_social_item_service">
-                            <a class="footer_social_link_service" href="#!">Горантии</a>
-                        </li>
-                        <li class="footer_social_item_service">
-                            <a class="footer_social_link_service" href="#!">Контакты</a>
-                        </li>
-                    </ul>
-                    <ul class="footer_social_list_social">
-                        <li class="footer_social_list_social">
-                            <a class="footer_social_link_social" href="#!">
-                                <img class="footer_social_logo" src="./img/svg/telegram.svg" alt="telegram">
-                            </a>
-                        </li>
-                            <a class="footer_social_link_social" href="#!">
-                                <img class="footer_social_logo" src="./img/svg/youtube.svg" alt="youtube">
-                            </a>
-                        <li class="footer_social_list_social">
-                            <a class="footer_social_link_social" href="#!">
-                                <img class="footer_social_logo" src="./img/svg/tveet.svg" alt="twitter">
-                            </a>
-                        </li>
-                    </ul>
-                    <section class="footer_phone">
-                        <a class="feedback_contacts_address_phone">
-                            +7 (812) 812-12-12
-                        </a>
-                        <a class="htmlacademy-link" href="https://htmlacademy.ru/">html academy
-                        </a>
-            </footer>
-            <!--footer end-->
+        </div>
+        </footer>
+        <!--footer end-->
     </main>
 </body>
 </html>

@@ -3,43 +3,155 @@
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
-    src: url(../fonts/rubik/rubik-400.woff2) format(woff2);
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
-    src: url(../fonts/raleway/raleway-800.woff2) format(woff2);
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "Rubik";
     font-style: normal;
     font-weight: 700;
-    src: url(../fonts/rubik/rubik-700.woff2) format(woff2);
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
     font-display: swap;
-/*Конец подключения шрифтов*/
-
 }
+/*Конец подключения шрифтов*/
+ html {
+    height: 100%;
+ }
 body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    min-height: 100%;
     font-family: "Raleway", sans-serif;
     font-size: 18px;
     line-height: 30px;
     color: #444444;
     background-color: #ffffff;
 }
-/*Стилизация Header*/
+.main_container {
+    flex-grow: 1;
+}
+/* сетка главной страницы header*/
+.page_header {
+   background-color: #FFE17F;
+   color: #000000;
+}
+.navigation {
+    display: flex;
+    width: 1040px;
+    margin: 0 auto;
+}
+.navigation_user, .navigation_service_list {
+    width: 520px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation_list {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navigation_service_list {
+    max-width: 417px;
+    margin-left: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .navigation_user {
+ 
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px; 
 }
-.page_header {
-    color: #000000;
-    background-color: #FFE17F;
+/*конец разметки больших сеток контейнера*/
+/* Начало разметки больших блоков main*/
+.page_container {
+    width: 1160px;
+    margin: 0 auto;
+}
+.main_product_interactive {
+    margin: 0;
+    padding: 0;
+}
+.main_advantages {
+    margin: 0;
+    padding: 0;
+}
+/*Начало разметки  больших блоков типов товаров */
+.main_type_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: black;
+}
+.main_type_item {
+    width: 160px;
+}
+/*Конец разметки больших блоков типов товаров */
+/*Сборка больших блоков на странице(разметка ширины)*/
+.index_columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.main_product_interactive  {
+    width: 560px;
+    text-transform: uppercase;
+}
+.main_advantages {
+    width: 560px;
+    text-transform: uppercase;
+}
+.feedback_about_us {
+    width: 520px;
+    text-transform: uppercase;
+}
+.feedback_contacts {
+    width: 532px;
+    text-transform: uppercase;
+}
+/*Ширина футера*/
+.page_footer_container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+.footer_address {
+    width: 234px;
+    margin-right: 124px;
+}
+.footer_phone {
+    margin-left: auto;
+    max-width: 175px;
+}
+.navigation_logo {
+    width: 145px;
+    margin-right: 60px;
+}
+.catalog_product {
+    display: flex;
+}
+.catalog_product_filter {
+    width: 320px;
+    margin-right: 40px;
+}
+.catalog_right_column {
+    width: 760px;
 }
 /*Базовая Стилизация ссылок в Header*/
 .navigation_service_link, .navigation_catalog_list_link {
@@ -63,13 +175,13 @@ body {
 }
 /*Базовая стилизация заголовков*/
 .main_advantages_title, .feedback_about_us_title, .feedback_contacts_title, .mail_title {
-    font-family: "Raleway";
     font-style: normal;
     color: #000000;
     font-weight: 800;
     font-size: 50px;
     line-height: 30px;
 }
+
 /*Базовая стилизация ссылок с желтой полосой*/
 .main_advantages_more, .main_service_tabs_links, .fedback_about_us_link, .feedback_contacts_link, .catalog_form {
     font-family: "Rubik";
@@ -91,7 +203,6 @@ body {
 }
 /*Базовая стилизация разделов продукта*/
 .main_type_link {
-    font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
     line-height: 24px;
@@ -101,7 +212,6 @@ body {
 }
 
 .main_service_delivery_order_link {
-    font-family: "Raleway";
     font-style: normal;
     font-weight: 800;
     font-size: 20px;
@@ -126,8 +236,8 @@ body {
     line-height: 30px;
 }
 /*Базовая стилизация футера*/
-footer {
-    color: #FFFFFF;
+.page_footer {
+    color: #ffffff;
     background-color: #444444;
 }
 .footer_address_description {

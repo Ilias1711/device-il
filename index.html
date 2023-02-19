@@ -10,37 +10,42 @@
 <body>
     <!--Header start-->
     <header class="page_header">
-        
         <nav class="navigation">
             <a href="index.html" class="navigation_logo">
                 <img src="./img/svg/logo.svg" width="145" height="36" alt="Логотип магазина DEVICE" class="page_header_logo">
             </a>
             <ul class="navigation_user">
-                <li class="seach">
-                    <!--Отправка формы-->
-                    <form class="navigation_get_form" action="#!" method="get">
-                        <img src="./img/svg/search.svg" alt="search">
-                        <label for="search">
-                            <input type="text" id="search">
-                        </label>
-                        
-                    </form>
+                <div class="navigation_container_1">
+                    <li class="seach">
+                        <!--Отправка формы-->
+                        <form class="navigation_get_form" action="#!" method="get">
+                            <img src="./img/svg/search.svg" alt="search">
+                            <label for="search">
+                                <input type="text" id="search">
+                            </label>
+                     
+                        </form>
                     <!--Конец отправки формы-->
-                </li>
-                <li class="input">
-                    <img src="./img/svg/human.svg" alt="human">
-                    <a class="input_link" href="#!">Войти</a>
-                </li>
-                <li class="compare">
-                    <img src="./img/svg/compare.svg" alt="compare">
-                    <a class="input_link" href="#!">Сравнить</a>
-                </li>
-                <li class="bag">
-                    <img src="./img/svg/bag.svg" alt="bag">
-                    <a class="input_link" href="#!">Корзина</a>
-                </li>
+                    </li>
+                </div>
+                <div class="navigation_container_2"> 
+                    <li class="input">
+                        <img src="./img/svg/human.svg" alt="human">
+                        <a class="input_link" href="#!">Войти</a>
+                    </li>
+                    <div class="navigation_container_2_1">
+                        <li class="compare">
+                            <img src="./img/svg/compare.svg" alt="compare">
+                            <a class="input_link" href="#!">Сравнить</a>
+                        </li>
+                        <li class="bag">
+                            <img src="./img/svg/bag.svg" alt="bag">
+                            <a class="input_link" href="#!">Корзина</a>
+                        </li>
+                    </div>
+                </div> 
             </ul>
-            <div class="navigation_catalog_list">  
+            <div class="navigation_container_3">  
                 <a class="navigation_catalog_list_link" href="#!">Каталог товаров
                     <span class="elips">
 
@@ -69,6 +74,7 @@
                         </li>
                     </ul>
                 </div>
+                
                 <!--Конец разметки всплывающего списка категорий товаров-->
             </div>
             <div class="navigation_service">
@@ -89,39 +95,44 @@
     <!--Header end-->
 
     <!--main content start-->
-    <main class="main_index">
-        <section class="main_product">
-            <h1 class="visually_hidden">Магазин "DEVICE"</h1>
-
-            <div class="main_product_interactive">
-                <button class="slider_button slider_next" type="button">
-                    <span class="visually_hidden">Предыдущее фото</span>
-                </button>
-                <a class="main_product_interactive_link" href="#!">
-                    <img class="main_product_interactive_img" width="560" height="560" src="./img/png/slider-1.png" alt="Квадрокоптер">
-                </a>
-                <button class="slider_button slider_prev" type="button">
-                    <span class="visually_hidden">Следующее фото</span>
-                </button>
-            </div>
-            <div class="main_advantages">
-                <h2 class="main_advantages_title">Порхает как бабочка, жалит как пчела!</h2>
-                <p class="main_advantages_info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-                </p>
-                <a href="#!" class="main_advantages_more">Подробнее</a>
-                <div class="main_advantages_specification">
+    <main class="main_container main_index">
+        <div class="page_container">
+            <section class="main_product">
+           <!-- <h1 class="visually_hidden">Магазин "DEVICE"</h1> -->
+                <div class="index_columns">
+                    <div class="main_product_interactive">
+                        <button class="slider_button slider_next" type="button">
+                            <span class="visually_hidden">Предыдущее фото</span>
+                        </button>
+                        <a class="main_product_interactive_link" href="#!">
+                            <img class="main_product_interactive_img" width="560" height="560" src="./img/png/slider-1.png" alt="Квадрокоптер">
+                        </a>
+                        <button class="slider_button slider_prev" type="button">
+                            <span class="visually_hidden">Следующее фото</span>
+                        </button>
+                    </div>
+                    <div class="main_advantages">
+                        <h2 class="main_advantages_title">Порхает как бабочка, жалит как пчела!</h2>
+                        <p class="main_advantages_info">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                        </p>
+                        <a href="#!" class="main_advantages_more">Подробнее</a>
+                        
+                        
+                        <h4 class="specifications">800м</h4>
+                        <p class="specifications_description">Дальность полета</p>
                     
-                    <h4 class="specifications">800м</h4>
-                    <p class="specifications_description">Дальность полета</p>
-                    <h4 class="specifications">50m</h4>
-                    <p class="specifications_description">Радиус поражения</p>
+                    
+                        <h4 class="specifications">50m</h4>
+                        <p class="specifications_description">Радиус поражения</p>
+                    </div>
                 </div>
             </div>
-            <div class="main_index_mark">
+        </div>
+            <!--<div class="main_index_mark">
                 <span class="eleps">
                 <span class="eleps">
                 <span class="eleps">
-            </div>
+            </div>-->
         </section> 
         <section class="main_type">
                 <ul class="main_type_list">
@@ -135,7 +146,7 @@
                         <a class="main_type_link" href="#!"></a>
                         <p class="main_type_descriotion">Моноподы для селфи</p>
                     </li>
-                    <li class="manin_type_item">
+                    <li class="main_type_item">
                         <img class="main_type_img" src="./img/svg/catalor_images/action.svg" alt="Экшн-камеры">
                         <a class="main_type_link" href="#!">Экшн-камеры</a>
                         <p class="main_type_description">Экшн-камеры</p>
@@ -219,7 +230,7 @@
 
         <!--feedback start-->
         <section class="feedback">
-
+        <div class="index_columns">
             <div class="feedback_about_us">
                 <h2 class="feedback_about_us_title">
                     О нас
@@ -272,6 +283,7 @@
                 </ul>
                 <a class="feedback_contacts_link" href="#!">Напишите нам</a>
             </div>
+        </div>
         </section>
         <section class="mail">
             <h2 class="mail_title">
@@ -294,10 +306,12 @@
                 <p>Это бесплатно</p>
         </section>
         <!--feedback end-->
+        </div>
     </main>
     <!--main end-->
     <!--footer start-->
     <footer class="page_footer">
+    <div class="page_footer_container">
         <section class="footer_address">
             <a href="#!">
                 <img src="./img/svg/footer_label.svg" width="145" height="36" alt="device">
@@ -308,7 +322,7 @@
             </p>
         </section>
         <section class="footer_social">
-            <h2 class="visually_hidden">Мы в социальных сетях</h1>
+            <h2 class="visually_hidden">Мы в социальных сетях</h2>
             <ul class="footer_social_list_service">
                 <li class="footer_social_item_service">
                     <a class="footer_social_link_service" href="#!">Доставка</a>
@@ -320,6 +334,7 @@
                     <a class="footer_social_link_service" href="#!">Контакты</a>
                 </li>
             </ul>
+        
             <ul class="footer_social_list_social">
                 <li class="footer_social_list_social">
                     <a class="footer_social_link_social" href="#!">
@@ -335,6 +350,7 @@
                     </a>
                 </li>
             </ul>
+        </section>
             <section class="footer_phone">
                 <a class="feedback_contacts_address_phone">
                     +7 (812) 812-12-12
@@ -342,6 +358,8 @@
                 <a class="footer_phone_htmlAcademy" href="#!">
                     <img src="./img/svg/Frame.svg" alt="htmlAcademy">
                 </a>
+            </section>
+    </div>
     </footer>
     <!--footer end-->
 </body>

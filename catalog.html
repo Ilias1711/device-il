@@ -161,12 +161,23 @@
                 </form>
                 <!--Конец формы-->
                 <div class="catalog_right_column">
-                    <select class="select_control" aria-label="Сортировка">
-                        <option value="popular">Популярное</option>
-                        <option value="cheap">Низкая цена</option>
-                        <option value="expensive">Высокая цена</option>
-                    </select>
-                
+                    <div class="sorting_container">
+                        <select class="select_control" aria-label="Сортировка">
+                            <option value="popular">Популярное</option>
+                            <option value="cheap">Низкая цена</option>
+                            <option value="expensive">Высокая цена</option>
+                        </select>
+                        <a href="#" class="button button_light" >
+                            <span class="visually_hidden">
+                                Верх
+                            </span>
+                        </a>
+                        <a href="#" class="button" >
+                            <span class="visually_hidden">
+                                Низ
+                            </span>
+                        </a>
+                    </div>
                     <!--Стрелки вверх, вниз-->
                 
                     <ul class="product_card_list">
@@ -199,37 +210,41 @@
                             <b class="product_card_price">1 500 ₽</b>
                         </li>
                     </ul>
-                    <button class="pagination_button" type="button">
-                        Загрузить еще
-                    </button>
+                    <div class="more_container">
+                        <button class="pagination_button" type="button">
+                            Загрузить еще
+                        </button>
+                    </div>
                     <!--Pagination start-->
-                    <ul class="pagination">
-                        <li class="pagination_item">
-                        <a class="pagination_link pagination_prev pagination_disabled">
-                            <span class="visually_hidden">Назад</span>
-                        </a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link pagination-current">1</a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link" href="#">2</a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link" href="#">3</a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link" href="#">4</a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link" href="#">5</a>
-                        </li>
-                        <li class="pagination_item">
-                            <a class="pagination_link pagination_next" href="#"></a>
-                            <span class="visually_hidden">Вперед</span>
-              
-                        </li>
-                    </ul>
+                    <div class="pagination_container">
+                        
+                        <ul class="pagination">
+                            <li class="pagination_item">
+                            <a class="pagination_link pagination_prev pagination_disabled">
+                                <span class="visually_hidden">Назад</span>
+                            </a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link pagination-current">1</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link" href="#">2</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link" href="#">3</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link" href="#">4</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link" href="#">5</a>
+                            </li>
+                            <li class="pagination_item">
+                                <a class="pagination_link pagination_next" href="#"></a>
+                                <span class="visually_hidden">Вперед</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         </div>
@@ -254,26 +269,26 @@
                         <a class="footer_social_link_service" href="#!">Доставка</a>
                     </li>
                     <li class="footer_social_item_service">
-                        <a class="footer_social_link_service" href="#!">Горантии</a>
+                        <a class="footer_social_link_service" href="#!">Гарантия</a>
                     </li>
                     <li class="footer_social_item_service">
                         <a class="footer_social_link_service" href="#!">Контакты</a>
                     </li>
                 </ul>
             
-                <ul class="footer_social_list_social">
-                    <li class="footer_social_list_social">
-                        <a class="footer_social_link_social" href="#!">
+                <ul class="footer_social_list">
+                    <li class="footer_social_list_item">
+                        <a class="footer_social_linkl" href="#!">
                             <img class="footer_social_logo" src="./img/svg/telegram.svg" alt="telegram">
                         </a>
                     </li>
-                    <li class="footer_social_link_social">
-                        <a class="footer_social_link_social" href="#!">
+                    <li class="footer_social_list_item">
+                        <a class="footer_social_link" href="#!">
                             <img class="footer_social_logo" src="./img/svg/youtube.svg" alt="youtube">
                         </a>
                     </li>
-                    <li class="footer_social_list_social">
-                        <a class="footer_social_link_social" href="#!">
+                    <li class="footer_social_list_item">
+                        <a class="footer_social_link" href="#!">
                             <img class="footer_social_logo" src="./img/svg/tveet.svg" alt="twitter">
                         </a>
                     </li>
@@ -290,5 +305,5 @@
         </div>
     </footer>
             <!--footer end-->
-        </body>
-        </html>
+    </body>
+    </html>

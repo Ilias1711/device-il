@@ -237,7 +237,9 @@ body {
 .main_advantages_info {
     margin-bottom: 60px;
 }
-
+.main_inner {
+    padding-top: 35px;
+}
 .main_advantages_more {
     display: inline-block;
     margin-bottom: 60px;
@@ -368,6 +370,8 @@ body {
 }
 /*Базовая стилизация каталога*/
  .inner_header_title {
+    margin-top: 0;
+    margin-bottom: 16px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -376,9 +380,19 @@ body {
     color: #000000;
  }
  .breadcrumbs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 34px;
     color:#000000;
+    list-style-type: none;
  }
+ .sorting-container .button {
+    width: 56px;
+    height: 44px;
+  }
  .breadcrumbs_link {
+    margin-right: 36px;
     color: inherit;
     text-decoration: none;
     font-family: 'Rubik';
@@ -387,7 +401,32 @@ body {
     font-size: 16px;
     line-height: 20px;
  }
- .catalog_product_filter_title{
+ .sorting_container {
+    display: flex;
+    padding:20px;
+    margin-bottom: 70px;
+    color:#000000;
+    background-color: #ffffff;
+ }
+ .product_card_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 44px;
+ }
+
+.pagination_container {
+    display: flex;
+    padding: 25px;
+    background-color: #EBEBEB;
+}
+.pagination_button {
+    display: flex;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    
+}
+.catalog_product_filter_title{
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -395,8 +434,8 @@ body {
     line-height: 20px;
     color: #000000;
     text-transform: uppercase;
- }
- .product_card_link {
+}
+.product_card_link {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 700;
@@ -421,11 +460,19 @@ body {
     line-height: 20px;
     color: #000000;
  }
- .sorting_container {
+.sorting_container {
     color: black;
     background-color:#F0F0F0;
- }
+}
+.more_container {
+    display: flex;
+    margin-bottom: 44px;
+}
 .pagination {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     background-color: #EBEBEB;
 }
 .pagination_link  {
@@ -434,6 +481,20 @@ body {
     text-decoration: none;
     line-height: 18px;
     font-weight: 800;
+}
+.pagination_item:not(:last-child) {
+    margin-right: 30px;
+}
+.pagination_link {
+    display: block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    padding: 10px 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #444444;
+    text-decoration: none;
 }
 /*Базовая стилизация завершена*/
 /*Сетка главной страницы*/
@@ -528,6 +589,7 @@ body {
 .catalog_product_filter {
     width: 320px;
     margin-right: 40px;
+    background-color: #F0F0F0;
 }
 .catalog_right_column {
     width: 840px;

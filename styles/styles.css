@@ -24,7 +24,7 @@
     display: none;
 }
 /* Базовая стилизация главной страницы */
- html {
+html {
     height: 100%;
  }
 body {
@@ -48,7 +48,6 @@ body {
     color: black;
     background-color: #FFE17F;
 }
-/*стилизация ссылок в header*/
 .navigation_link {
     display: block;
     padding: 25px 20px;
@@ -72,8 +71,19 @@ body {
     text-decoration: none;
     text-align: center;
 }
-/*-------------------------------------------*/
-/* Базовая стилизация main*/
+.button {
+    display: inline-block;
+    padding: 10px -10px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 800;
+    text-align: center;
+    color: #000000;
+    background-color: #FFE17F;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 .main_index {
     color: #444444;
     background-color: #ffffff;
@@ -116,7 +126,9 @@ body {
     padding: 0;
     list-style-type: none;
 }
-
+.advantages_row_item {
+    margin-right: 20px;
+}
 /*-------------------------------------------*/
 /*Табы*/
 .container {
@@ -137,7 +149,7 @@ body {
     order: 0;
     white-space: nowrap;
     margin-bottom: 15px;
-    background-color: #fff;
+    background-color: #FFE17F;
     border: 1px solid #e3f2fd;
     box-shadow: 0 2px 4px 0 #e3f2fd;
   }
@@ -169,7 +181,7 @@ body {
 
   @media (min-width: 1000px) {
     .tabs {
-      flex-direction: row;
+        flex-direction: row;
     }
 
     .tabs_links {
@@ -188,17 +200,32 @@ body {
       margin-bottom: 0;
     }
 
-    .tabs>div:not(.tabs_links) {
+    .tabs>.tab_container:not(.tabs_links) {
       padding-left: 15px;
     }
   }
 
-  .tabs>div:target {
+  .tabs>.tab_container:target {
     display: block;
   }
 
 .main_service {
     margin-bottom: 142px;
+}
+
+/*Блок с доставкой*/
+
+.main_service_delivery_order_link {
+    display: flex;
+    justify-content: space-between;
+}
+.main_service_delivery_order_logo {
+    height: 100px;
+    width: 125px;
+    background-color: #FFE17F;
+}
+.main_service_delivery_order {
+    background-color: #F0F0F0;
 }
 
 /*Блок с доставкой*/
@@ -224,6 +251,7 @@ body {
     background-color: #ffffff;
 
 }
+
 .main_advantages_title {
     margin-top: 0;
     margin-bottom: 29px;
@@ -234,12 +262,15 @@ body {
     font-size: 50px;
     line-height: 50px;
 }
+
 .main_advantages_info {
     margin-bottom: 60px;
 }
+
 .main_inner {
     padding-top: 35px;
 }
+
 .main_advantages_more {
     display: inline-block;
     margin-bottom: 60px;
@@ -263,7 +294,8 @@ body {
     line-height: 30px;
     color: #000000;
 }
-.button {
+
+button {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -294,6 +326,13 @@ body {
     text-transform: uppercase;
     color: #000000;
 }
+.feedback_about_us {
+    width: 520px;
+    margin-right: 130px;
+}
+.feedback_contacts {
+    width: 532px;
+}
 .feedback_about_us_title, .feedback_contacts_title {
     font-family: 'Raleway';
     font-style: normal;
@@ -323,13 +362,14 @@ body {
     font-size: 18px;
     line-height: 30px;
     text-decoration: none;
-    
 }
 .feedback_container {
     display: flex;
     margin-bottom: 80px;
 }
 .mail_container {
+    width: 1160px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     
@@ -348,6 +388,14 @@ body {
     margin-left: 252px;
 }
 .mail {
+    
+    background-color: #F0F0F0;
+}
+.mail_get_form {
+    display: flex;
+    justify-content: space-between;
+}
+.main_service {
     background-color: #F0F0F0;
 }
 /*Базовая стилизация футера*/
@@ -409,15 +457,26 @@ body {
     background-color: #ffffff;
  }
 .product_card_item {
-    background-color:  #ffffff;
+    background-color:  #ffffff; 
+}
+.product_card_price {
+    padding: 50px;
 }
 .product_card_list {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-left: 40px;
     margin-bottom: 44px;
+    gap: 40px;
 }
-
+.product_card_link_container {
+    width: 360px;
+    display: flex;
+    margin: 0 auto;
+}
 .pagination_container {
     display: flex;
     margin-left: 40px;
@@ -440,6 +499,11 @@ body {
     color: #000000;
     text-transform: uppercase;
 }
+.product_card_title {
+    display: inline-block;
+    width: 180px;
+}
+
 .product_card_link {
     font-family: 'Rubik';
     font-style: normal;
@@ -448,23 +512,30 @@ body {
     line-height: 20px;
     color: #000000;
     text-decoration: none;
- }
- .product_card_price {
+}
+.product_card_price {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     text-align: right;
- }
- .catalog_product_filter_color, .catalog_product_filter_bluetooth {
+}
+.catalog_product_color {
+    background-color: #F0F0F0;
+}
+.catalog_product {
+    width: 1160px;
+    margin: 0 auto;
+}
+.catalog_product_filter_color, .catalog_product_filter_bluetooth {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #000000;
- }
+}
 .sorting_container {
     color: black;
     background-color:#F0F0F0;
@@ -507,9 +578,7 @@ body {
 }
 /*Базовая стилизация завершена*/
 /*Сетка главной страницы*/
-.html {
-    height: 100%;
-}
+
 .main_container {
     flex-grow: 1;
 }
@@ -547,6 +616,8 @@ body {
     margin: 0 auto;
 }
 .main_product_interactive {
+    display: flex;
+    margin-right: 40px;
     width: 560px;
     text-transform: uppercase;
 }
@@ -564,17 +635,24 @@ body {
     margin-left: auto;
     max-width: 175px;
 }
+.footer_phone_htmlAcademy {
+    margin-top: 63px;
+}
 .footer_social_list_service  {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 137px;
     margin: 0;
     margin-bottom: 60px;
     padding: 0;
     list-style-type: none;
 }
+
 .footer_social_list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
     list-style-type: none;

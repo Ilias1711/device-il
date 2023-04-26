@@ -142,11 +142,31 @@
                 <!--Отправка формы для фильтра товcара-->
                 <form class="catalog_product_filter" action="#!" method="get">
                     <p class="catalog_product_filter_title">ЦВЕТ:</p>
-                    <p><input class="catalog_product_filter_color" type="checkbox" name="a" value="black">Черный</p>
-                    <p><input class="catalog_product_filter_color" type="checkbox" name="a" value="white">Белый</p>
-                    <p><input class="catalog_product_filter_color" type="checkbox" name="a" value="blue">Синий</p>
-                    <p><input class="catalog_product_filter_color" type="checkbox" name="a" value="red">Красный</p>
-                    <p><input class="catalog_product_filter_color" type="checkbox" name="a" value="pink">Розовый</p>
+                    <p>
+                        <label for="catalog_product_filter_color_black">
+                            <input id="catalog_product_filter_color_black" class="catalog_product_filter_color" type="checkbox" name="a" value="black">Черный
+                        </label>
+                    </p>
+                    <p>
+                        <label for="catalog_product_filter_color_white">
+                            <input id="catalog_product_filter_color_white" class="catalog_product_filter_color" type="checkbox" name="a" value="white">Белый
+                        </label>
+                    </p>
+                    <p>
+                        <label for="catalog_product_filter_color_blue">
+                            <input id="catalog_product_filter_color_blue" class="catalog_product_filter_color" type="checkbox" name="a" value="blue">Синий
+                        </label>
+                    </p>
+                    <p>
+                        <label for="catalog_product_filter_color_red">
+                            <input id="catalog_product_filter_color_red" class="catalog_product_filter_color" type="checkbox" name="a" value="red">Красный
+                        </label>
+                    </p>
+                    <p>
+                        <label for="catalog_product_filter_color_pink">
+                            <input id="atalog_product_filter_color_pink" class="catalog_product_filter_color" type="checkbox" name="a" value="pink">Розовый
+                        </label>
+                    </p>
                     <p class="catalog_product_filter_title">Bluetooth</p>
                     <label for="bluetooth_yes">
                         Есть
@@ -163,6 +183,7 @@
                 <!--Конец формы-->
                 <div class="catalog_right_column">
                     <div class="sorting_container">
+                        <h2 class="sorting_container_title">Сортировка:</h2>
                         <select class="select_control" aria-label="Сортировка">
                             <option value="popular">Популярное</option>
                             <option value="cheap">Низкая цена</option>
@@ -268,7 +289,7 @@
         <div class="page_footer_container">
             <section class="footer_adres">
                 <a href="#!">
-                    <img src="./img/svg/footer_label.svg" width="145" height="36" alt="device">
+                    <img class="footer_address_logo" src="./img/svg/footer_label.svg" width="145" height="36" alt="device">
                 </a>
                 <p class="footer_address_description">
                     Санкт-Петербург, набережная
@@ -277,35 +298,47 @@
             </section>
             <section class="footer_social">
                 <h2 class="visually_hidden">Мы в социальных сетях</h2>
-                <ul class="footer_social_list_service">
-                    <li class="footer_social_item_service">
-                        <a class="footer_social_link_service" href="#!">Доставка</a>
-                    </li>
-                    <li class="footer_social_item_service">
-                        <a class="footer_social_link_service" href="#!">Гарантия</a>
-                    </li>
-                    <li class="footer_social_item_service">
-                        <a class="footer_social_link_service" href="#!">Контакты</a>
-                    </li>
-                </ul>
-            
-                <ul class="footer_social_list">
-                    <li class="footer_social_list_item">
-                        <a class="footer_social_linkl" href="#!">
-                            <img class="footer_social_logo" src="./img/svg/telegram.svg" alt="telegram">
-                        </a>
-                    </li>
-                    <li class="footer_social_list_item">
-                        <a class="footer_social_link" href="#!">
-                            <img class="footer_social_logo" src="./img/svg/youtube.svg" alt="youtube">
-                        </a>
-                    </li>
-                    <li class="footer_social_list_item">
-                        <a class="footer_social_link" href="#!">
-                            <img class="footer_social_logo" src="./img/svg/tveet.svg" alt="twitter">
-                        </a>
-                    </li>
-                </ul>
+
+                    <ul class="footer_social_list_service">
+                        <li class="footer_social_item_service">
+                            <a class="footer_social_link_service" href="#!">Доставка</a>
+                        </li>
+                        <li class="footer_social_item_service">
+                            <a class="footer_social_link_service" href="#!">Гарантия</a>
+                        </li>
+                        <li class="footer_social_item_service">
+                            <a class="footer_social_link_service" href="#!">Контакты</a>
+                        </li>
+                    </ul>
+                    
+                        <ul class="footer_social_list">
+                            <li class="footer_social_list_item ">
+                                
+                                <a class="footer_social_link footer_social_youtube" href="#!">
+                                    
+                                        
+                                    
+                                </a>
+                                
+                                
+                            </li>
+                            <li class="footer_social_list_item ">
+
+                                <a class="footer_social_link footer_social_telegram" href="#!">
+                                    
+                                        
+                                    
+                                </a>
+                            </li>
+                            <li class="footer_social_list_item ">
+                                <a class="footer_social_link footer_social_tweet" href="#!">
+                                    
+                                        
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    
             </section>
             <section class="footer_phone">
                 <a class="feedback_contacts_address_phone">
@@ -316,7 +349,7 @@
                 </a>
             </section>
         </div>
-    </footer>
+    
             <!--footer end-->
     </body>
     </html>

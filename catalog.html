@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>device</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <!--32x32-->
+    <link sizes="16x16" rel="icon" href="favicon.svg" />
   </head>
   <body>
     <div class="page_container">
@@ -31,7 +30,7 @@
               </a>
             </div>
 
-            <form class="navigation_get" action="#!" method="get">
+            <form class="navigation_get" action="https://echo.htmlacademy.ru/" method="get">
               <svg
                 class="navigation_get_icon"
                 aria-hidden="true"
@@ -47,13 +46,14 @@
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                 />
               </svg>
-              <label class="navigation_get_serch" for="search">
+              <label class="navigation_get_search" for="search">
                 <input
                   placeholder="Поиск по сайту"
                   class="navigation_get_string"
                   type="text"
                   id="search"
                   name="search"
+                  required
                 />
               </label>
               <button type="submit" class="navigation_get_form_button">
@@ -71,40 +71,36 @@
                   </a>
 
                   <ul class="subcatalog_list">
-                    <li class="navigation_item subcatalog_item">
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Виртуальная реальность</a
                       >
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+                    </li>
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Моноподы для селфи</a
                       >
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+                    </li>
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Экшн-камеры</a
                       >
                     </li>
 
-                    <li class="navigation_item subcatalog_item">
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Фитнес-браслеты</a
                       >
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+                    </li>
+
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Умные часы</a
                       >
                     </li>
-                    <li class="navigation_item subcatalog_item">
-                      <a
-                        class="navigation_link subcatalog_link"
-                        href="catalog.html"
+
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Квадрокоптеры</a
                       >
                     </li>
@@ -116,7 +112,7 @@
           <div class="nav_column_2">
             <ul class="navigation_list navigation_user navigation_user_catalog">
               <li>
-                <button class="navigation_link navigation_link_1">
+                <a class="navigation_link navigation_link_1">
                   <svg
                     class="navigation_icon"
                     aria-hidden="true"
@@ -133,14 +129,14 @@
                     />
                   </svg>
                   Коля Петухов
-                </button>
+                </a>
               </li>
               <li class="navigation_item">
-                <button class="navigation_link navigation_link_1">Выйти</button>
+                <a class="navigation_link navigation_link_1">Выйти</a>
               </li>
 
               <li class="navigation_item">
-                <button class="navigation_link navigation_link_2">
+                <a class="navigation_link navigation_link_2">
                   <svg
                     class="navigation_icon"
                     aria-hidden="true"
@@ -157,11 +153,11 @@
                     />
                   </svg>
                   Сравнить
-                </button>
+                </a>
               </li>
               <li class="navigation_item item_bag">
                 <span class="navigation_point"> 2 </span>
-                <button class="navigation_link navigation_link_3">
+                <a class="navigation_link navigation_link_3">
                   <svg
                     class="navigation_icon"
                     aria-hidden="true"
@@ -178,15 +174,18 @@
                     />
                   </svg>
                   Корзина
-                </button>
+                </a>
                 <div class="popover_content">
                   <ul class="popover_list">
                     <li class="popover_item">
                       <a class="popover_link" href="#!">
                         <img
                           class="popover_img"
+                          width="39"
+                          height="43"
                           src="../device-il/img/popover-sel-small.png"
                           alt="Любительская селфи-палка"
+
                         />
                         <p class="popover_item_title">
                           Любительская<br />
@@ -214,8 +213,11 @@
                       <a class="popover_link" href="#!">
                         <img
                           class="popover_img"
+                          width="39"
+                          height="43"
                           src="../device-il/img/popover-selpro-small.png"
                           alt="Профессиональная селфи-палка"
+
                         />
                         <p class="popover_item_title">
                           Профессиональная<br />
@@ -288,7 +290,7 @@
           <div class="catalog_top">Фильтр:</div>
           <section class="catalog_product">
             <h2 class="visually_hidden">Фильтр товаров</h2>
-            <form class="catalog_product_filter" action="#!" method="get">
+            <form class="catalog_product_filter" action="https://echo.htmlacademy.ru/" method="get">
               <div class="filter_form_field">
                 <fieldset class="catalog_filter_group">
                   <legend class="catalog_filter_title catalog_price">
@@ -433,6 +435,7 @@
                           name="availability_bluetooth"
                           value="No"
                           id="bluetooth_no"
+                          required
                         />
                         <span class="control_mark_bluetooth"></span>
                         <span class="control_label">Нет</span>
@@ -476,13 +479,13 @@
                   src="./img/catalog-product-2.jpg"
                   alt="любительская селфи-палка"
                 />
-                <div class="prouct_card_link_container">
+                <div class="product_card_link_container">
                   <h3 class="product_card_title">Любительская селфи-палка</h3>
                   <b class="product_card_price">500 ₽</b>
                 </div>
               </a>
             </li>
-            <li class="product_card_item">
+            <li class="product_card_item product_card_item_new">
               <button class="catalog_button button">Подробнее</button>
               <a class="product_card_link" href="#!">
                 <img
@@ -492,7 +495,7 @@
                   src="./img/catalog-product-3.jpg"
                   alt="профессиональная селфи-палка"
                 />
-                <div class="prouct_card_link_container">
+                <div class="product_card_link_container">
                   <h3 class="product_card_title">
                     Профессиональная селфи-палка
                   </h3>
@@ -510,7 +513,7 @@
                   src="./img/catalog-product-4.jpg"
                   alt="Непотопляемая селфи-палка"
                 />
-                <div class="prouct_card_link_container">
+                <div class="product_card_link_container">
                   <h3 class="product_card_title">Непотопляемая селфи-палка</h3>
                   <b class="product_card_price">2 500 ₽</b>
                 </div>
@@ -526,7 +529,7 @@
                   src="./img/catalog-product-5.jpg"
                   alt="Селфи-палка следуй за мной "
                 />
-                <div class="prouct_card_link_container">
+                <div class="product_card_link_container">
                   <h3 class="product_card_title">
                     Селфи-палка «Следуй за мной»
                   </h3>
@@ -567,7 +570,7 @@
     </main>
     <footer class="page_footer">
       <div class="page_footer_container">
-        <section class="footer_adres">
+        <section class="footer_adress">
           <h2 class="visually_hidden">Адрес</h2>
           <a class="footer_address_logo" href="index.html">
             <svg
@@ -657,10 +660,10 @@
             </li>
           </ul>
         </section>
-        <section class="footer_phone">
+        <section class="footer_phone_container">
           <h2 class="visually_hidden">Телефон</h2>
           <a class="footer_phone" href="tel:+7(812)812-12-12">
-            Тел.:+7(812)812-12-12
+            Тел.:+7 (812) 812-12-12
           </a>
           <a class="footer_htmlAcademy_link" href="https://htmlacademy.ru">
             <svg

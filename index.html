@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>device</title>
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="icon" href="favicon.ico" />
-    <!--32x32-->
+    <link sizes="16x16" rel="icon" href="favicon.svg" />
   </head>
   <body>
     <div class="page_container">
@@ -30,7 +29,7 @@
                 </svg>
               </a>
             </div>
-            <form class="navigation_get" action="#!" method="get">
+            <form class="navigation_get" action="https://echo.htmlacademy.ru/" method="post">
               <svg
                 class="navigation_get_icon"
                 aria-hidden="true"
@@ -46,13 +45,14 @@
                   d="m15.7 14.3-3.1-3.1C13.5 10 14 8.6 14 7c0-3.9-3.1-7-7-7S0 3.1 0 7s3.1 7 7 7c1.6 0 3-.5 4.2-1.4l3.1 3.1c.2.2.4.3.7.3.6 0 1-.4 1-1 0-.2-.1-.5-.3-.7ZM2 7c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5Z"
                 />
               </svg>
-              <label class="navigation_get_serch" for="search">
+              <label class="navigation_get_search" for="search">
                 <input
                   placeholder="Поиск по сайту"
                   class="navigation_get_string"
                   type="text"
                   id="search"
                   name="search"
+                  required
                 />
               </label>
               <button class="navigation_get_form_button" type="submit">
@@ -71,21 +71,30 @@
                       <a class="navigation_link subcatalog_link" href="#!"
                         >Виртуальная реальность</a
                       >
+                    </li>
+                    <li class="subcatalog_item">
                       <a class="navigation_link subcatalog_link" href="#!"
                         >Моноподы для селфи</a
-                      >
-                      <a class="navigation_link subcatalog_link" href="#!"
-                        >Экшн-камеры</a
                       >
                     </li>
                     <li class="subcatalog_item">
                       <a class="navigation_link subcatalog_link" href="#!"
+                        >Экшн-камеры</a
+                      >
+                    </li>
+
+                    <li class="subcatalog_item">
+                      <a class="navigation_link subcatalog_link" href="#!"
                         >Фитнес-браслеты</a
                       >
+                    </li>
+
+                    <li class="subcatalog_item">
                       <a class="navigation_link subcatalog_link" href="#!"
                         >Умные часы</a
                       >
                     </li>
+
                     <li class="subcatalog_item">
                       <a class="navigation_link subcatalog_link" href="#!"
                         >Квадрокоптеры</a
@@ -101,7 +110,7 @@
             <div class="navigation_lists_container">
               <ul class="navigation_user">
                 <li class="navigation_item">
-                  <button class="navigation_link navigation_link_1">
+                  <a class="navigation_link navigation_link_1">
                     <svg
                       class="navigation_icon"
                       aria-hidden="true"
@@ -118,12 +127,12 @@
                       />
                     </svg>
                     Войти
-                  </button>
+                  </a>
                 </li>
               </ul>
               <ul class="user_function">
                 <li class="navigation_item">
-                  <button class="navigation_link navigation_link_2">
+                  <a class="navigation_link navigation_link_2">
                     <svg
                       class="navigation_icon"
                       aria-hidden="true"
@@ -140,10 +149,10 @@
                       />
                     </svg>
                     Сравнить
-                  </button>
+                  </a>
                 </li>
                 <li class="navigation_item item_bag">
-                  <button class="navigation_link_3">
+                  <a class="navigation_link_3">
                     <span class="navigation_point"> 2 </span>
                     <svg
                       class="navigation_icon"
@@ -161,14 +170,16 @@
                       />
                     </svg>
                     Корзина
-                  </button>
+                  </a>
                   <div class="popover_content">
                     <ul class="popover_list">
                       <li class="popover_item">
                         <a class="popover_link" href="#!">
                           <img
                             class="popover_img"
-                            src="../device-il/img/popover-sel-small.png"
+                            width="39"
+                            height="43"
+                            src="img/popover-sel-small.png"
                             alt="Любительская селфи-палка"
                           />
                           <p class="popover_item_title">
@@ -197,7 +208,9 @@
                         <a class="popover_link" href="#!">
                           <img
                             class="popover_img"
-                            src="../device-il/img/popover-selpro-small.png"
+                            width="39"
+                            height="43"
+                            src="img/popover-selpro-small.png"
                             alt="Профессиональная селфи-палка"
                           />
                           <p class="popover_item_title">
@@ -345,9 +358,9 @@
         </div>
 
         <div class="main_index_mark">
-          <span class="eleps"></span>
-          <span class="eleps"></span>
-          <span class="eleps"></span>
+          <span class="ellipse"></span>
+          <span class="ellipse"></span>
+          <span class="ellipse"></span>
         </div>
       </section>
       <div class="page_container">
@@ -582,7 +595,7 @@
                     <path d="M2 0H0v2h2V0ZM2 4H0v8h2V4Z" />
                   </g>
                   <defs>
-                    <clipPath id="deliveri_information">
+                    <clipPath id="delivery_information">
                       <path fill="#fff" d="M0 0h2v12H0z" />
                     </clipPath>
                   </defs>
@@ -610,7 +623,7 @@
                   <li><span>СДИК</span></li>
                   <li><span>ТоксБерри</span></li>
                 </ul>
-                <button class="button feedback_about_us_link" href="#!"></button>
+                <button class="button feedback_about_us_link">
                   Подробнее о нас
                 </button>
               </div>
@@ -630,7 +643,7 @@
                   <li>пн—пт: с 10:00 до 22:00</li>
                   <li>сб—вс: с 10:00 до 19:00</li>
                 </ul>
-                <button class="button feedback_contacts_link" href="#!">
+                <button class="button feedback_contacts_link">
                   Напишите нам
                 </button>
               </div>
@@ -651,7 +664,7 @@
           </p>
         </div>
         <div class="mail_container">
-          <form action="#!" class="form_mail" method="get">
+          <form action="https://echo.htmlacademy.ru/" class="form_mail" method="post">
             <h2 class="visually_hidden">Форма отправки мыла</h2>
             <div class="form_group">
               <label class="form_label" for="get_mail">
@@ -661,6 +674,7 @@
                   class="form_input"
                   id="get_mail"
                   name="get_mail"
+                  required
                 />
               </label>
             </div>
@@ -686,7 +700,7 @@
     </main>
     <footer class="page_footer">
       <div class="page_footer_container">
-        <section class="footer_adres">
+        <section class="footer_adress">
           <h2 class="visually_hidden">Адрес</h2>
           <a class="footer_address_logo" href="index.html">
             <svg
@@ -776,10 +790,10 @@
             </li>
           </ul>
         </section>
-        <section class="footer_phone">
+        <section class="footer_phone_container">
           <h2 class="visually_hidden">Телефон</h2>
           <a class="footer_phone" href="tel:+7(812)812-12-12">
-            Тел.:+7(812)812-12-12
+            Тел.:+7 (812) 812-12-12
           </a>
           <a class="footer_htmlAcademy_link" href="https://htmlacademy.ru">
             <svg
@@ -798,16 +812,16 @@
       </div>
     </footer>
 
-    <div class="modal_container">
+    <div class="modal_container modal_container_close">
       <div class="modal">
         <button class="modal_close_button">
           <span class="visually_hidden">Закрыть </span>
         </button>
-        <section class="moadl_content">
+        <section class="modal_content">
           <h2 class="modal_title">Доставка под заказ</h2>
         </section>
         <div class="modal_form_container">
-          <form class="auth_form auth_form_name" action="#!" method="post">
+          <form class="auth_form auth_form_name" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field_group">
               <label class="auth_label" for="auth_login">Ваше имя:</label>
               <input
@@ -816,6 +830,7 @@
                 name="auth_login"
                 id="auth_login"
                 placeholder="Введите имя"
+                required
               />
               <svg
                 class="field_group_svg"
@@ -831,7 +846,7 @@
               </svg>
             </p>
           </form>
-          <form class="auth_form auth_form_mail" action="#!" method="post">
+          <form class="auth_form auth_form_mail" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field_group">
               <label class="auth_label" for="auth_email">Ваш e-mail:</label>
               <input
@@ -840,6 +855,7 @@
                 name="auth_email"
                 id="auth_email"
                 placeholder="Введите e-mail"
+                required
               />
               <svg
                 class="field_group_svg"
@@ -857,7 +873,7 @@
           </form>
         </div>
         <div class="modal_form_container">
-          <form class="auth_form auth_form_product" action="#!" method="post">
+          <form class="auth_form auth_form_product" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field_group">
               <label class="auth_label" for="login_auth"
                 >Что нужно привезти:</label
@@ -867,10 +883,12 @@
                 type="text"
                 id="login_auth"
                 placeholder="В свободной форме"
+                required
               />
             </p>
+            <button class="button modal_get_button" type="submit">Отправить</button>
           </form>
-          <form class="auth_form auth_form_quantity" action="#!" method="post">
+          <form class="auth_form auth_form_quantity" action="https://echo.htmlacademy.ru/" method="post">
             <div class="field_group">
               <div class="field_container">
                 <label class="auth_label" for="quantity">Колличество:</label>
@@ -890,7 +908,7 @@
                 </button>
               </div>
               <div class="counter">
-                <button class="modal_button madal_button_minus">
+                <button class="modal_button modal_button_minus">
                   <svg
                     width="16"
                     height="16"
@@ -905,6 +923,7 @@
                   type="text"
                   name="auth_email"
                   id="quantity"
+                  readonly
                 />
                 <button class="modal_button modal_button_plus">
                   <svg
@@ -920,7 +939,6 @@
             </div>
           </form>
         </div>
-        <button class="button">Отправить</button>
       </div>
     </div>
   </body>

@@ -255,7 +255,7 @@ body {
 .navigation_link_service {
   position: relative;
   display: block;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -436,7 +436,7 @@ body {
   background-color: #444444;
 }
 .popover_button {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -516,7 +516,7 @@ body {
   position: relative;
   letter-spacing: 0.2em;
   display: block;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -632,7 +632,7 @@ body {
   transform: rotate(180deg);
 }
 .form_button {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -727,7 +727,7 @@ body {
   margin: 0 auto;
 }
 .main_type_link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   text-decoration: none;
   position: relative;
   display: block;
@@ -843,7 +843,7 @@ body {
   padding-top: 63px;
   list-style: none;
   border-right: 7px solid #000;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -899,7 +899,7 @@ body {
   justify-content: center;
 }
 .main_service_delivery_order_link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -972,7 +972,7 @@ body {
 .main_advantages_title {
   margin-top: 0;
   margin-bottom: 35px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   color: #000000;
   font-weight: 800;
@@ -992,7 +992,7 @@ body {
 .main_advantages_more {
   display: inline-block;
   margin-bottom: 51px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1012,7 +1012,7 @@ body {
   color: #000000;
 }
 .main_service_tabs_links {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -1111,7 +1111,7 @@ body {
   margin-bottom: -3px;
 }
 .feedback_contacts_link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -1126,7 +1126,7 @@ body {
   padding: 0;
 }
 .feedback_about_us_link {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -1141,7 +1141,7 @@ body {
   position: relative;
   margin: 0;
   margin-bottom: 49px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -1236,7 +1236,7 @@ body {
 .mail_title {
   margin-top: 66px;
   margin-left: 7px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -1336,7 +1336,7 @@ body {
 }
 .footer_social_link_service {
   position: relative;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -1364,7 +1364,7 @@ body {
 .inner_header_title {
   margin-top: 0;
   margin-bottom: 10px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -1430,7 +1430,7 @@ body {
   background-color: #f0f0f0;
 }
 .sorting_container_title {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1465,7 +1465,7 @@ body {
 
 
 .catalog_button {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -1510,7 +1510,7 @@ body {
 }
 .pagination_button {
   flex-wrap: wrap;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -1544,7 +1544,7 @@ body {
 .pagination_back,
 .pagination_forvard {
   padding: 25px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   color: #000000;
   font-weight: 800;
@@ -1591,7 +1591,7 @@ body {
 }
 
 .product_card_link {
-  font-family: "Rubik";
+  font-family: "Rubik", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1787,7 +1787,7 @@ body {
   padding: 60px 0;
   margin-bottom: 10px;
 }
-.footer_adress {
+.footer_address {
   width: 234px;
   margin-right: 124px;
 }
@@ -1980,7 +1980,7 @@ body {
   cursor: pointer;
 }
 .modal_title {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   margin: 0;
   font-style: normal;
   font-weight: 800;
@@ -1993,13 +1993,13 @@ body {
   width: 71%;
 }
 .modal_form_container {
-  width: 100%;
+  width: 760px;
   justify-content: space-between;
   display: flex;
   gap: 40px;
 }
 .modal_get_button {
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -2020,7 +2020,7 @@ body {
   background-color: #f0f0f0;
   border: none;
   height: 60px;
-  width: 94%;
+  width: 350px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
@@ -2074,6 +2074,9 @@ body {
   margin-top: 10px;
   position: relative;
 }
+.field_free {
+  width: 540px;
+}
 .field_group_svg {
   position: absolute;
   top: 60px;
@@ -2096,7 +2099,7 @@ body {
 }
 .catalog_top {
   margin: 25px 0 60px 25px;
-  font-family: "Raleway";
+  font-family: "Raleway", "Arial", sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -2287,13 +2290,23 @@ body {
   width: 33%;
 }
 .modal_button {
-  width: 33%;
+  position: relative;
   height: 60px;
+  width: 60px;
+  text-align: center;
+  align-items: center;
   border: none;
   cursor: pointer;
   user-select: none;
 }
+.modal_button_svg {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 .counter {
+  width: 180px;
+  background-color: #F0F0F0;
   display: inline-flex;
   align-items: center;
 }

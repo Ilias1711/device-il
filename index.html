@@ -29,7 +29,11 @@
                 </svg>
               </a>
             </div>
-            <form class="navigation_get" action="https://echo.htmlacademy.ru/" method="post">
+            <form
+              class="navigation_get"
+              action="https://echo.htmlacademy.ru/"
+              method="post"
+            >
               <svg
                 class="navigation_get_icon"
                 aria-hidden="true"
@@ -210,7 +214,7 @@
                             class="popover_img"
                             width="39"
                             height="43"
-                            src="img/popover-selpro-small.png"
+                            src="img/popover-SelfiePro-small.png"
                             alt="Профессиональная селфи-палка"
                           />
                           <p class="popover_item_title">
@@ -274,7 +278,7 @@
                   class="main_product_interactive_img"
                   width="560"
                   height="560"
-                  src="./img/slider-quatro.png"
+                  src="./img/slider-quattro.png"
                   alt="Квадрокоптер"
                 />
               </a>
@@ -498,7 +502,7 @@
                       />
                     </g>
                     <defs>
-                      <clipPath id="creditik">
+                      <clipPath id="credit">
                         <path fill="#fff" d="M0 0h171v195H0z" />
                       </clipPath>
                     </defs>
@@ -664,13 +668,17 @@
           </p>
         </div>
         <div class="mail_container">
-          <form action="https://echo.htmlacademy.ru/" class="form_mail" method="post">
-            <h2 class="visually_hidden">Форма отправки мыла</h2>
+          <form
+            action="https://echo.htmlacademy.ru/"
+            class="form_mail"
+            method="post"
+          >
+            <h2 class="visually_hidden">Форма отправки <e-mail></e-mail></h2>
             <div class="form_group">
               <label class="form_label" for="get_mail">
                 <input
                   placeholder="Ваш e-mail"
-                  type="text"
+                  type="email"
                   class="form_input"
                   id="get_mail"
                   name="get_mail"
@@ -700,7 +708,7 @@
     </main>
     <footer class="page_footer">
       <div class="page_footer_container">
-        <section class="footer_adress">
+        <section class="footer_address">
           <h2 class="visually_hidden">Адрес</h2>
           <a class="footer_address_logo" href="index.html">
             <svg
@@ -820,8 +828,13 @@
         <section class="modal_content">
           <h2 class="modal_title">Доставка под заказ</h2>
         </section>
-        <div class="modal_form_container">
-          <form class="auth_form auth_form_name" action="https://echo.htmlacademy.ru/" method="post">
+
+        <form
+          class="auth_form auth_form_name"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <div class="modal_form_container">
             <p class="field_group">
               <label class="auth_label" for="auth_login">Ваше имя:</label>
               <input
@@ -845,13 +858,11 @@
                 />
               </svg>
             </p>
-          </form>
-          <form class="auth_form auth_form_mail" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field_group">
               <label class="auth_label" for="auth_email">Ваш e-mail:</label>
               <input
                 class="auth_form_field field"
-                type="text"
+                type="email"
                 name="auth_email"
                 id="auth_email"
                 placeholder="Введите e-mail"
@@ -870,25 +881,22 @@
                 />
               </svg>
             </p>
-          </form>
-        </div>
-        <div class="modal_form_container">
-          <form class="auth_form auth_form_product" action="https://echo.htmlacademy.ru/" method="post">
+          </div>
+          <div class="modal_form_container">
             <p class="field_group">
               <label class="auth_label" for="login_auth"
                 >Что нужно привезти:</label
               >
               <input
-                class="auth_form_field field"
+                class="auth_form_field field field_free"
                 type="text"
-                id="login_auth"
+                id="auth_product_free"
+                name="auth_product_free"
                 placeholder="В свободной форме"
                 required
               />
             </p>
-            <button class="button modal_get_button" type="submit">Отправить</button>
-          </form>
-          <form class="auth_form auth_form_quantity" action="https://echo.htmlacademy.ru/" method="post">
+
             <div class="field_group">
               <div class="field_container">
                 <label class="auth_label" for="quantity">Колличество:</label>
@@ -908,8 +916,9 @@
                 </button>
               </div>
               <div class="counter">
-                <button class="modal_button modal_button_minus">
+                <span class="modal_button modal_button_minus">
                   <svg
+                    class="modal_button_svg"
                     width="16"
                     height="16"
                     fill="none"
@@ -917,16 +926,17 @@
                   >
                     <path d="M16 7H0v2h16V7Z" fill="#000" />
                   </svg>
-                </button>
+                </span>
                 <input
                   class="auth_quantity"
-                  type="text"
+                  type="number"
                   name="auth_email"
                   id="quantity"
-                  readonly
+                  disabled
                 />
-                <button class="modal_button modal_button_plus">
+                <span class="modal_button modal_button_plus">
                   <svg
+                    class="modal_button_svg"
                     width="16"
                     height="16"
                     fill="none"
@@ -934,11 +944,14 @@
                   >
                     <path d="M16 7H9V0H7v7H0v2h7v7h2V9h7V7Z" fill="#000" />
                   </svg>
-                </button>
+                </span>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+          <button class="button modal_get_button" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
   </body>

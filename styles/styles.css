@@ -1952,7 +1952,7 @@ body {
   z-index: 3;
 }
 .modal_container_close {
-  display: none;
+  display: ;
 }
 .modal {
   position: relative;
@@ -2063,6 +2063,7 @@ body {
 }
 .field_button:hover .field_i_text {
   display: flex;
+  z-index: 3;
 }
 .auth_form_quantity {
   width: 29%;
@@ -2284,10 +2285,20 @@ body {
   width: 50px;
 }
 .auth_quantity {
+  font-family: "Rubik", "Arial" sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
   background-color: #f0f0f0;
   border: none;
   height: 60px;
   width: 33%;
+}
+.auth_quantity::-webkit-outer-spin-button,
+.auth_quantity::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 .modal_button {
   position: relative;

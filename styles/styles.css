@@ -1952,7 +1952,7 @@ body {
   z-index: 3;
 }
 .modal_container_close {
-  display: ;
+  display: none;
 }
 .modal {
   position: relative;

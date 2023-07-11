@@ -411,12 +411,12 @@
           <div class="tabs_container">
             <div class="tabs">
               <nav class="tabs_items">
-                <a href="#tab_01" class="tab_item button active">Доставка</a>
-                <a href="#tab_02" class="tab_item button">Гарантия</a>
-                <a href="#tab_03" class="tab_item button">Кредит</a>
+                <a href="#tab_01" class="tab_item button active" data-tab-name="tab-1">Доставка</a>
+                <a href="#tab_02" class="tab_item button" data-tab-name="tab-2">Гарантия</a>
+                <a href="#tab_03" class="tab_item button" data-tab-name="tab-3">Кредит</a>
               </nav>
               <div class="tabs_body">
-                <div id="tab_01" class="tabs_block active">
+                <div id="tab_01" class="tabs_block active tab-1">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Доставка</h2>
                     <p class="main_advantages_price">
@@ -457,7 +457,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div id="tab_02" class="tabs_block">
+                <div id="tab_02" class="tabs_block tab-2">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Гарантия</h2>
                     <p>
@@ -508,7 +508,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div id="tab_03" class="tabs_block">
+                <div id="tab_03" class="tabs_block tab-3">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Кредит</h2>
                     <p>
@@ -954,5 +954,6 @@
         </form>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

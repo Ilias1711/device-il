@@ -1951,7 +1951,7 @@ body {
   background-color: rgba(220, 220, 220, 0.5);
   z-index: 3;
 }
-.modal_container_close {
+.modalContainerClose {
   display: none;
 }
 .modal {

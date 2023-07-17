@@ -1,23 +1,48 @@
 let tab = function () {
-  let tabNav = document.querySelectorAll('.tab_item'),
-      tabContent = document.querySelectorAll('.tabs_block'),
-      tabName;
-  tabNav.forEach(item => {
-      item.addEventListener('click', selectTabNav)
-  });
+  const tabNav = document.querySelectorAll(".tab_item");
+  const tabContent = document.querySelectorAll(".tabs_block");
+  const parentTabContent = tabContent[0].parentNode;
+  const activeClassName = "active";
+  const removeTabClass = (elem) =>
+    elem.forEach((item) => item.classList.remove(activeClassName));
+
+  tabNav.forEach((item) => item.addEventListener("click", selectTabNav));
+
   function selectTabNav() {
-      tabNav.forEach(item => {
-          item.classList.remove('active');
-      });
-      this.classList.add('active');
-      tabName = this.getAttribute('data-tab-name');
-      console.log(tabName)
-      selectTabContent(tabName);
+    removeTabClass(tabNav);
+    this.classList.add(activeClassName);
+    selectTabContent(this.dataset.tabName);
   }
-  function selectTabContent(tabName) {
-      tabContent.forEach(item => {
-          item.classList.contains(tabName) ? item.classList.add('active') : item.classList.remove('active');
-      })
-  }
+
+  const selectTabContent = (tabName) => {
+    removeTabClass(tabContent);
+    parentTabContent
+      .querySelector(`[data-tab-content=${tabName}]`)
+      .classList.add(activeClassName);
+  };
 };
 tab();
+
+document.getElementById("open-modal").addEventListener("click", function () {
+  document.getElementById("my-modal").classList.remove("modalContainerClose");
+});
+
+document.getElementById("close-btn").addEventListener("click", function () {
+  document.getElementById("my-modal").classList.add("modalContainerClose");
+});
+
+window.addEventListener("keydown", (elem) => {
+  if (elem.key === "Escape") {
+    document.getElementById("my-modal").classList.add("modalContainerClose");
+  }
+});
+
+document.querySelector("#my-modal .modal_container").addEventListener("click", event => {
+  event._isCkickWithInModal = true;
+});
+
+document.getElementById("my-modal").addEventListener('click', event =>{
+  if (event._isCkickWithInModal) return;
+  event.currentTarget.classList.add("modalContainerClose");
+});
+

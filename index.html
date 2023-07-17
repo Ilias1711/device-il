@@ -416,7 +416,7 @@
                 <a href="#tab_03" class="tab_item button" data-tab-name="tab-3">Кредит</a>
               </nav>
               <div class="tabs_body">
-                <div id="tab_01" class="tabs_block active tab-1">
+                <div id="tab_01" class="tabs_block active" data-tab-content="tab-1">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Доставка</h2>
                     <p class="main_advantages_price">
@@ -457,7 +457,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div id="tab_02" class="tabs_block tab-2">
+                <div id="tab_02" class="tabs_block" data-tab-content="tab-2">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Гарантия</h2>
                     <p>
@@ -508,7 +508,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div id="tab_03" class="tabs_block tab-3">
+                <div id="tab_03" class="tabs_block" data-tab-content="tab-3">
                   <div class="tabs_block_container">
                     <h2 class="main_advantages_title">Кредит</h2>
                     <p>
@@ -647,7 +647,7 @@
                   <li>пн—пт: с 10:00 до 22:00</li>
                   <li>сб—вс: с 10:00 до 19:00</li>
                 </ul>
-                <button class="button feedback_contacts_link">
+                <button id="open-modal" class="button feedback_contacts_link">
                   Напишите нам
                 </button>
               </div>
@@ -820,9 +820,9 @@
       </div>
     </footer>
 
-    <div class="modal_container modal_container_close">
+    <div id="my-modal" class="modal_container modalContainerClose">
       <div class="modal">
-        <button class="modal_close_button">
+        <button id="close-btn" class="modal_close_button">
           <span class="visually_hidden">Закрыть </span>
         </button>
         <section class="modal_content">

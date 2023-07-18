@@ -23,13 +23,15 @@ let tab = function () {
 };
 tab();
 
+const CLASS_NAME_MODAL_CONTAINER = "modal_container_close";
 const btnShowModal = document.querySelector("#open-modal");
 const modal = document.querySelector("#my-modal");
 const closeBtn = modal.querySelector("#close-btn");
-const modalClose = () => modal.classList.add("modalContainerClose");
+const modalClose = () => modal.classList.add(CLASS_NAME_MODAL_CONTAINER);
+
 
 btnShowModal.addEventListener("click", () =>
-  modal.classList.remove("modalContainerClose")
+  modal.classList.remove(CLASS_NAME_MODAL_CONTAINER)
 );
 
 closeBtn.addEventListener("click", modalClose);

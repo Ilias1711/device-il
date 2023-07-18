@@ -23,6 +23,8 @@ let tab = function () {
 };
 tab();
 
+// Модальное окно
+
 document.getElementById("open-modal").addEventListener("click", function () {
   document.getElementById("my-modal").classList.remove("modalContainerClose");
 });
@@ -36,13 +38,3 @@ window.addEventListener("keydown", (elem) => {
     document.getElementById("my-modal").classList.add("modalContainerClose");
   }
 });
-
-document.querySelector("#my-modal .modal_container").addEventListener("click", event => {
-  event._isCkickWithInModal = true;
-});
-
-document.getElementById("my-modal").addEventListener('click', event =>{
-  if (event._isCkickWithInModal) return;
-  event.currentTarget.classList.add("modalContainerClose");
-});
-

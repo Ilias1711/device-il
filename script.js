@@ -23,16 +23,23 @@ let tab = function () {
 };
 tab();
 
-document.getElementById("open-modal").addEventListener("click", function () {
-  document.getElementById("my-modal").classList.remove("modalContainerClose");
-});
+const btnShowModal = document.querySelector("#open-modal");
+const modal = document.querySelector("#my-modal");
+const closeBtn = modal.querySelector("#close-btn");
+const modalClose = () => modal.classList.add("modalContainerClose");
 
-document.getElementById("close-btn").addEventListener("click", function () {
-  document.getElementById("my-modal").classList.add("modalContainerClose");
-});
+btnShowModal.addEventListener("click", () =>
+  modal.classList.remove("modalContainerClose")
+);
+
+closeBtn.addEventListener("click", modalClose);
 
 window.addEventListener("keydown", (elem) => {
-  if (elem.key === "Escape") {
-    document.getElementById("my-modal").classList.add("modalContainerClose");
-  }
+  const isEsc = elem.key === "Escape";
+  return isEsc && modalClose();
+});
+
+modal.addEventListener("click", (elem) => {
+  const isOverlay = elem.target.classList.contains("modal_container");
+  return isOverlay && modalClose();
 });

@@ -23,7 +23,7 @@ let tab = function () {
 };
 tab();
 
-// Модальное окно
+
 
 document.getElementById("open-modal").addEventListener("click", function () {
   document.getElementById("my-modal").classList.remove("modalContainerClose");

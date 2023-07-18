@@ -23,8 +23,6 @@ let tab = function () {
 };
 tab();
 
-
-
 document.getElementById("open-modal").addEventListener("click", function () {
   document.getElementById("my-modal").classList.remove("modalContainerClose");
 });

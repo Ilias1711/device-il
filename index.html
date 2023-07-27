@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>device</title>
+    <link
+      rel="stylesheet"
+      href="./styles/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./styles/styles.css" />
     <link sizes="16x16" rel="icon" href="favicon.svg" />
   </head>
@@ -267,104 +271,133 @@
       </header>
     </div>
     <main class="main_container main_index">
-      <section class="main_product">
-        <h1 class="visually_hidden">Магазин "DEVICE"</h1>
-        <div class="index_columns page_container">
-          <section class="main_product_interactive">
-            <h3 class="visually_hidden">Слайдер</h3>
-            <div class="slider_wrapper">
-              <a class="main_product_interactive_link" href="#!">
-                <img
-                  class="main_product_interactive_img"
-                  width="560"
-                  height="560"
-                  src="./img/slider-quattro.png"
-                  alt="Квадрокоптер"
-                />
-              </a>
-              <div class="slider_controls">
-                <button class="slider_button slider_prev" type="button">
-                  <span class="visually_hidden">Предыдущее фото</span>
-                  <svg
-                    class="slider_svg_prev"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="20"
-                    height="60"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z"
-                      fill="#000"
+      <section class="wrapper main_product page_container">
+        <div class="image-slider swiper-container">
+          <div class="image-slider_wrapper swiper-wrapper">
+            <div
+              class="image-slider_slide swiper-slide index_columns page_container"
+            >
+              <section class="main_product_interactive">
+                <h3 class="visually_hidden">Слайдер</h3>
+                <div class="image-slider_image slider_wrapper">
+                  <a class="main_product_interactive_link" href="#!">
+                    <img
+                      class="main_product_interactive_img"
+                      width="560"
+                      height="560"
+                      src="./img/slider-quattro.png"
+                      alt="Квадрокоптер"
                     />
-                  </svg>
-                </button>
-                <button class="slider_button slider_next" type="button">
-                  <svg
-                    class="slider_arrow_next"
-                    aria-hidden="true"
-                    focusable="false"
-                    width="20"
-                    height="60"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z"
-                      fill="#000"
-                    />
-                  </svg>
-                  <span class="visually_hidden">Следующее фото</span>
-                </button>
+                  </a>
+                </div>
+              </section>
+
+              <div class="main_advantages main_advantages_01">
+                <h2 class="main_advantages_title">
+                  Порхает как бабочка, жалит как пчела!
+                </h2>
+                <p class="main_advantages_info">
+                  Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                  лазером, замаскированным под стандартную камеру.
+                </p>
+                <a href="#!" class="button main_advantages_more">Подробнее</a>
+
+                <ul class="advantages_row">
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">800 м</h4>
+                    <p class="specifications_description">Дальность полета</p>
+                  </li>
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">50 м</h4>
+                    <p class="specifications_description">Радиус поражения</p>
+                  </li>
+                </ul>
               </div>
-              <ol class="slider_pagination">
-                <li class="slider_pagination_item">
-                  <button class="slider_pagination_button">
-                    <span class="visually_hidden">1 слайд</span>
-                  </button>
-                </li>
-                <li class="slider_pagination_item">
-                  <button class="slider_pagination_button">
-                    <span class="visually_hidden">2 слайд</span>
-                  </button>
-                </li>
-                <li class="slider_pagination_item">
-                  <button class="slider_pagination_button">
-                    <span class="visually_hidden">3 слайд</span>
-                  </button>
-                </li>
-              </ol>
             </div>
-          </section>
+            <div
+              class="image-slider_slide swiper-slide index_columns page_container"
+            >
+              <section class="main_product_interactive">
+                <h3 class="visually_hidden">Слайдер</h3>
+                <div class="image-slider_image slider_wrapper">
+                  <a class="main_product_interactive_link" href="#!">
+                    <img
+                      class="main_product_interactive_img"
+                      width="560"
+                      height="560"
+                      src="./img/slider-2.png"
+                      alt="Фитнес-браслеты"
+                    />
+                  </a>
+                </div>
+              </section>
 
-          <div class="main_advantages">
-            <h2 class="main_advantages_title">
-              Порхает как бабочка, жалит как пчела!
-            </h2>
-            <p class="main_advantages_info">
-              Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-              лазером, замаскированным под стандартную камеру.
-            </p>
-            <a href="#!" class="button main_advantages_more">Подробнее</a>
+              <div class="main_advantages main_advantages_02">
+                <h2 class="main_advantages_title">Худеем правильно!</h2>
+                <p class="main_advantages_info">
+                  Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                  пропускать занятия и соблюдать диету.
+                </p>
+                <a href="#!" class="button main_advantages_more">Подробнее</a>
 
-            <ul class="advantages_row">
-              <li class="advantages_row_item">
-                <h4 class="specifications">800 м</h4>
-                <p class="specifications_description">Дальность полета</p>
-              </li>
-              <li class="advantages_row_item">
-                <h4 class="specifications">50 м</h4>
-                <p class="specifications_description">Радиус поражения</p>
-              </li>
-            </ul>
+                <ul class="advantages_row">
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">48 часов</h4>
+                    <p class="specifications_description">Без подзарядки</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="image-slider_slide swiper-slide index_columns page_container"
+            >
+              <section class="main_product_interactive">
+                <h3 class="visually_hidden">Слайдер</h3>
+                <div class="image-slider_image slider_wrapper">
+                  <a class="main_product_interactive_link" href="#!">
+                    <img
+                      class="main_product_interactive_img"
+                      width="560"
+                      height="560"
+                      src="./img/slider-3.png"
+                      alt="Селфи-палка"
+                    />
+                  </a>
+                </div>
+              </section>
+
+              <div class="main_advantages main_advantages_03">
+                <h2 class="main_advantages_title">
+                  Делай селфи, как Бен Стиллер!
+                </h2>
+                <p class="main_advantages_info">
+                  Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
+                </p>
+                <a href="#!" class="button main_advantages_more">Подробнее</a>
+
+                <ul class="advantages_row">
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">8,5 м</h4>
+                    <p class="specifications_description">Длина палки</p>
+                  </li>
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">5 кг</h4>
+                    <p class="specifications_description">Вес палки</p>
+                  </li>
+                  <li class="advantages_row_item">
+                    <h4 class="specifications">Карбон</h4>
+                    <p class="specifications_description">Материал</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="main_index_mark">
-          <span class="ellipse"></span>
-          <span class="ellipse"></span>
-          <span class="ellipse"></span>
+          <div class="swiper-button_container">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </section>
       <div class="page_container">
@@ -959,6 +992,7 @@
         </form>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="./scripts/cdn.jsdelivr.net_npm_swiper@10_swiper-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>

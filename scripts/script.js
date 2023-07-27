@@ -45,3 +45,18 @@ modal.addEventListener("click", (elem) => {
   const isOverlay = elem.target.classList.contains("modal_container");
   return isOverlay && modalClose();
 });
+
+new Swiper('.image-slider', {
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+
+  },
+  spaceBetween: 4000,
+  simulateTouch: false,
+});
+

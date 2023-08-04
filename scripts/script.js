@@ -29,7 +29,6 @@ const modal = document.querySelector("#my-modal");
 const closeBtn = modal.querySelector("#close-btn");
 const modalClose = () => modal.classList.add(CLASS_NAME_MODAL_CONTAINER);
 
-
 btnShowModal.addEventListener("click", () =>
   modal.classList.remove(CLASS_NAME_MODAL_CONTAINER)
 );
@@ -46,6 +45,18 @@ modal.addEventListener("click", (elem) => {
   return isOverlay && modalClose();
 });
 
+new Swiper(".image-slider", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  spaceBetween: 0,
+});
+
 new Swiper('.image-slider', {
   navigation: {
       nextEl: '.swiper-button-next',
@@ -56,7 +67,28 @@ new Swiper('.image-slider', {
       clickable: true,
 
   },
-  spaceBetween: 4000,
+  spaceBetween: 0,
   simulateTouch: false,
 });
 
+let swiper = new Swiper(".mySwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  width: 300,
+});
+const imageSlider = new Swiper(".mySwiper2", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+  spaceBetween: 100,
+});

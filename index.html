@@ -272,11 +272,9 @@
     </div>
     <main class="main_container main_index">
       <section class="wrapper main_product page_container">
-        <div class="image-slider swiper-container">
-          <div class="image-slider_wrapper swiper-wrapper">
-            <div
-              class="image-slider_slide swiper-slide index_columns page_container"
-            >
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide" style="width: 500px;">
               <section class="main_product_interactive">
                 <h3 class="visually_hidden">Слайдер</h3>
                 <div class="image-slider_image slider_wrapper">
@@ -286,13 +284,30 @@
                       width="560"
                       height="560"
                       src="./img/slider-quattro.png"
-                      alt="Квадрокоптер"
+                      alt="Фитнес-браслеты"
                     />
                   </a>
                 </div>
               </section>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider-2.png" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/slider-3.png" />
+            </div>
 
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <div class="main_advantages main_advantages_01">
+                <span class="slider-counter">01</span>
                 <h2 class="main_advantages_title">
                   Порхает как бабочка, жалит как пчела!
                 </h2>
@@ -314,25 +329,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="image-slider_slide swiper-slide index_columns page_container"
-            >
-              <section class="main_product_interactive">
-                <h3 class="visually_hidden">Слайдер</h3>
-                <div class="image-slider_image slider_wrapper">
-                  <a class="main_product_interactive_link" href="#!">
-                    <img
-                      class="main_product_interactive_img"
-                      width="560"
-                      height="560"
-                      src="./img/slider-2.png"
-                      alt="Фитнес-браслеты"
-                    />
-                  </a>
-                </div>
-              </section>
-
+            <div class="swiper-slide">
               <div class="main_advantages main_advantages_02">
+                <span class="slider-counter">02</span>
                 <h2 class="main_advantages_title">Худеем правильно!</h2>
                 <p class="main_advantages_info">
                   Мотивирующие фитнес-браслеты помогут найти в себе силы не
@@ -348,25 +347,9 @@
                 </ul>
               </div>
             </div>
-            <div
-              class="image-slider_slide swiper-slide index_columns page_container"
-            >
-              <section class="main_product_interactive">
-                <h3 class="visually_hidden">Слайдер</h3>
-                <div class="image-slider_image slider_wrapper">
-                  <a class="main_product_interactive_link" href="#!">
-                    <img
-                      class="main_product_interactive_img"
-                      width="560"
-                      height="560"
-                      src="./img/slider-3.png"
-                      alt="Селфи-палка"
-                    />
-                  </a>
-                </div>
-              </section>
-
+            <div class="swiper-slide">
               <div class="main_advantages main_advantages_03">
+                <span class="slider-counter">03</span>
                 <h2 class="main_advantages_title">
                   Делай селфи, как Бен Стиллер!
                 </h2>
@@ -393,13 +376,9 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button_container">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-          <div class="swiper-pagination"></div>
         </div>
       </section>
+
       <div class="page_container">
         <section class="main_type">
           <h2 class="visually_hidden">Каталог</h2>

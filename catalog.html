@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>device</title>
+    <link rel="stylesheet" href="./plugins/nouislider.css">
     <link rel="stylesheet" href="./styles/styles.css" />
     <link sizes="16x16" rel="icon" href="favicon.svg" />
   </head>
@@ -303,7 +304,7 @@
                     Стоимость
                   </legend>
                   <div class="range">
-                    <div class="range_scale">
+                    <div class="range_scale" id="range-slider">
                       <div class="range_bar" style="left: 1px; width: 119px">
                         <button
                           type="button"
@@ -319,7 +320,7 @@
                       <label class="catalog_filter_label" for="first_sum">
                         От<input
                           class="range_input range_input_min"
-                          id="first_sum"
+                          id="input-0"
                           type="number"
                           value="0"
                           name="min_price"
@@ -329,7 +330,7 @@
                       <label class="catalog_filter_label" for="second_sum">
                         До<input
                           class="range_input range_input_max"
-                          id="second_sum"
+                          id="input-1"
                           type="number"
                           value="5000"
                           name="max_price"
@@ -687,5 +688,7 @@
         </section>
       </div>
     </footer>
+    <script src="./plugins/nouislider.js"></script>
+    <script src="./scripts/catalog-script.js"></script>
   </body>
 </html>

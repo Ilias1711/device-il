@@ -2354,8 +2354,8 @@ body {
 }
 .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
-  width: 1100px;
-  z-index: 10;
+  bottom: 125px;
+  width: 1160px;
 }
 .swiper-pagination-bullet {
   width: 10px;
